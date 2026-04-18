@@ -1,0 +1,38 @@
+{% include base_path %}
+
+<div class="pub-card">
+  <div class="pub-card__thumb">
+    {% if post.thumbnail %}
+      <img src="{{ post.thumbnail | prepend: '/images/projects/' | prepend: base_path }}" alt="{{ post.title }}">
+    {% else %}
+      <div class="pub-card__thumb--empty"><i class="fas fa-robot" aria-hidden="true"></i></div>
+    {% endif %}
+  </div>
+
+  <div class="pub-card__body">
+    <h3 class="pub-card__title">
+      <span class="lang-zh">{{ post.title }}</span>
+      <span class="lang-en">{{ post.title_en | default: post.title }}</span>
+    </h3>
+
+    <p class="pub-card__venue">
+      <i class="fas fa-calendar-alt" aria-hidden="true" style="margin-right:0.4em;"></i>{{ post.period }}
+      &nbsp;·&nbsp;
+      <span class="lang-zh">{{ post.funder }}</span>
+      <span class="lang-en">{{ post.funder_en | default: post.funder }}</span>
+    </p>
+
+    <p class="pub-card__authors">
+      <i class="fas fa-user" aria-hidden="true" style="margin-right:0.4em;"></i>
+      <span class="lang-zh">{{ post.role }}</span>
+      <span class="lang-en">{{ post.role_en | default: post.role }}</span>
+    </p>
+
+    {% if post.teaser or post.teaser_en %}
+    <p class="pub-card__teaser">
+      {% if post.teaser %}<span class="lang-zh">{{ post.teaser }}</span>{% endif %}
+      {% if post.teaser_en %}<span class="lang-en">{{ post.teaser_en }}</span>{% endif %}
+    </p>
+    {% endif %}
+  </div>
+</div>

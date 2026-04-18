@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/bo/Documents/bohanfeng.github.io/.claude/worktrees/optimistic-neumann-12019e && bundle exec jekyll serve --port 4000 --host 0.0.0.0"],
+      "port": 4000
+    }
+  ]
+}
