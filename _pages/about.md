@@ -42,22 +42,20 @@ redirect_from:
   padding: 1.2em 1.5em;
 }
 .edu-card__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.9em;
-  margin-bottom: 0.9em;
+  position: relative;
+  padding-right: 96px;
+  margin-bottom: 0.35em;
 }
 .edu-card__text {
-  flex: 1;
+  min-width: 0;
 }
 .edu-card__logo {
-  width: 56px;
-  height: 56px;
+  width: 73px;
+  height: 73px;
   object-fit: contain;
-  flex: 0 0 56px;
-  order: 2;
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .edu-card__degree {
   font-weight: 700;
@@ -66,6 +64,7 @@ redirect_from:
 }
 .edu-card__school {
   font-size: 0.88em;
+  line-height: 1.35;
 }
 .edu-card__period {
   color: #777;
@@ -314,6 +313,9 @@ redirect_from:
   flex: 0 0 198px;
 }
 @media (max-width: 900px) {
+  .edu-card__header {
+    padding-right: 88px;
+  }
   .theme-card {
     flex-direction: column;
     align-items: flex-start;
@@ -560,5 +562,4 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 - Champion, 3rd Linchao Cup International Chinese Debate Invitational, Northeast China Region (Sep. 2018)
 - Champion, Dalian Yuheng Cup Debate Tournament (Dec. 2017)
 
-Unless otherwise noted, the competition awards listed above were earned as a participant rather than as an advisor.
 </div>

@@ -49,7 +49,7 @@
   .greedy-nav,
   .page__hero--overlay .wrapper,
   .page__footer footer {
-    max-width: 1760px;
+    max-width: 1408px;
   }
 }
 
@@ -91,4 +91,12 @@
   .page__related {
     margin-left: 0;
   }
+}
+
+.sidebar .author__desktop--inline {
+  white-space: nowrap;
+}
+
+.sidebar .author__desktop--inline a {
+  display: inline;
 }
