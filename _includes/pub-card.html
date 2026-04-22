@@ -1,9 +1,47 @@
 {% include base_path %}
 
+{% assign title_href = post.url | prepend: base_path %}
+{% if post.paperurl %}
+  {% if post.paperurl contains '://' %}
+    {% assign title_href = post.paperurl %}
+  {% else %}
+    {% assign title_href = post.paperurl | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
+{% assign pdf_href = "" %}
+{% if post.pdfurl %}
+  {% if post.pdfurl contains '://' %}
+    {% assign pdf_href = post.pdfurl %}
+  {% else %}
+    {% assign pdf_href = post.pdfurl | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
+{% assign paper_href = "" %}
+{% if post.paperurl %}
+  {% if post.paperurl contains '://' %}
+    {% assign paper_href = post.paperurl %}
+  {% else %}
+    {% assign paper_href = post.paperurl | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
+{% assign slides_href = "" %}
+{% if post.slidesurl %}
+  {% if post.slidesurl contains '://' %}
+    {% assign slides_href = post.slidesurl %}
+  {% else %}
+    {% assign slides_href = post.slidesurl | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
+{% assign thumbnail_value = post.thumbnail | to_s | strip %}
+
 <div class="pub-card">
   <div class="pub-card__thumb">
-    {% if post.thumbnail %}
-      <img src="{{ post.thumbnail | prepend: '/images/publications/' | prepend: base_path }}" alt="{{ post.title }}">
+    {% if thumbnail_value != "" %}
+      <img src="{{ thumbnail_value | prepend: '/images/publications/' | prepend: base_path }}" alt="{{ post.title }}">
     {% else %}
       <div class="pub-card__thumb--empty"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
     {% endif %}
@@ -11,11 +49,7 @@
 
   <div class="pub-card__body">
     <h3 class="pub-card__title">
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" target="_blank" rel="noopener">{{ post.title }}</a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
-      {% endif %}
+      <a href="{{ title_href }}" target="_blank" rel="noopener">{{ post.title }}</a>
     </h3>
 
     {% if post.authors %}
@@ -34,15 +68,21 @@
     {% endif %}
 
     <div class="pub-card__links">
-      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i>
-        <span class="lang-zh">论文</span><span class="lang-en">Paper</span>
-      </a>{% endif %}
-      {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>
-        <span class="lang-zh">代码</span><span class="lang-en">Code</span>
-      </a>{% endif %}
-      {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank" rel="noopener"><i class="fas fa-person-chalkboard" aria-hidden="true"></i>
-        <span class="lang-zh">幻灯片</span><span class="lang-en">Slides</span>
-      </a>{% endif %}
+      {% if pdf_href != "" %}
+        <a href="{{ pdf_href }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i>
+          <span class="lang-zh">PDF</span><span class="lang-en">PDF</span>
+        </a>
+      {% endif %}
+      {% if paper_href != "" and paper_href != pdf_href %}
+        <a href="{{ paper_href }}" target="_blank" rel="noopener"><i class="fas fa-link" aria-hidden="true"></i>
+          <span class="lang-zh">链接</span><span class="lang-en">Paper</span>
+        </a>
+      {% endif %}
+      {% if slides_href != "" %}
+        <a href="{{ slides_href }}" target="_blank" rel="noopener"><i class="fas fa-person-chalkboard" aria-hidden="true"></i>
+          <span class="lang-zh">幻灯片</span><span class="lang-en">Slides</span>
+        </a>
+      {% endif %}
     </div>
   </div>
 </div>

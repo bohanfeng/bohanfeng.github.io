@@ -7,6 +7,7 @@ category: manuscripts
 thumbnail: ""
 teaser: "Multi-modal reinforcement learning with adaptive admittance control for human-robot collaborative transport of deformable objects."
 teaser_zh: "基于多模态强化学习与自适应导纳控制的人机协作柔性物体搬运方法。"
-paperurl: ""
+paperurl: "https://doi.org/10.1016/j.aei.2025.103905"
+pdfurl: "/files/papers/2026-aei-codot.pdf"
 codeurl: ""
 ---

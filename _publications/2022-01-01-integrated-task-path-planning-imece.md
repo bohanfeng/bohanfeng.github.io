@@ -8,5 +8,6 @@ thumbnail: ""
 teaser: "Early integrated task and path planning approach for mobile robots in smart factory environments."
 teaser_zh: "智能工厂移动机器人任务与路径规划一体化方法（会议版本）。"
 paperurl: "https://doi.org/10.1115/IMECE2022-95364"
+pdfurl: "/files/papers/2022-imece-integrated-task-path-planning.pdf"
 codeurl: ""
 ---

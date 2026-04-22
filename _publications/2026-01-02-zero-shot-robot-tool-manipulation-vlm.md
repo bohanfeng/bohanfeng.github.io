@@ -7,6 +7,7 @@ category: manuscripts
 thumbnail: ""
 teaser: "A modular vision-language model framework with multimodal affordance representation for zero-shot robotic tool manipulation in industrial settings."
 teaser_zh: "面向工业场景的多模态可供性增强模块化视觉语言模型零样本机器人工具操作框架。"
-paperurl: ""
+paperurl: "https://doi.org/10.1016/j.rcim.2025.103161"
+pdfurl: "/files/papers/2026-rcim-toolmanip-vlm.pdf"
 codeurl: ""
 ---

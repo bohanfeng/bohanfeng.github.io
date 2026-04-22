@@ -3,7 +3,7 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "冯波瀚 | Bohan Feng"
 title_separator          : "-"
 name                     : &name "Bohan Feng (Dylan Bo)"
-description              : &description "Bohan Feng's academic portfolio — robotics and intelligent manufacturing"
+description              : &description "Academic homepage of Bohan Feng: robotic manufacturing process quality, motion generation, and human-robot collaboration."
 url                      : https://bohanfeng.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bohanfeng/bohanfeng.github.io"
@@ -26,12 +26,14 @@ author:
   name             : "Bohan Feng (Dylan Bo)"
   name_zh          : "冯波瀚"
   pronouns         :
-  bio              : "Lecturer at the Global Institute of Future Technology (GIFT), SJTU. Research focuses on complex decision-making and mechanistic modeling in robotics and intelligent manufacturing."
-  bio_zh           : "上海交通大学溥渊未来技术学院讲师，研究机器人与智能制造中的复杂决策与机理建模方法。"
+  bio              : "Lecturer at Shanghai Jiao Tong University. Research focuses on mechanisms and active regulation of process quality formation in robotic manufacturing."
+  bio_zh           : "上海交通大学讲师。研究聚焦机器人工艺质量形成机理与主动调控。"
   location         : "Shanghai, China"
   location_zh      : "上海，中国"
-  employer         : "Global Institute of Future Technology (GIFT), SJTU"
+  employer         : "Global Institute of Future Technology, Shanghai Jiao Tong University"
   employer_zh      : "上海交通大学溥渊未来技术学院"
+  employer_url     : "https://gift.sjtu.edu.cn/en"
+  employer_url_zh  : "https://gift.sjtu.edu.cn/"
   uri              : # URL
   email            : "bohan.feng@sjtu.edu.cn"
 
@@ -49,18 +51,17 @@ author:
   scopus           : # URL
   zotero           : # URL
 
-
   # Repositories and software development
   bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
   github           : "bohanfeng"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -88,11 +89,11 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    title: "Books"
   manuscripts:
-    title: 'Journal Articles'    
+    title: "Journal Articles"
   conferences:
-    title: 'Conference Papers'
+    title: "Conference Papers"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -112,14 +113,14 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  allowedFields          : ["name", "email", "url", "message"]
   branch                 : "gh-pages" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ["name", "email", "message"]
   transforms:
     email                : "md5"
   generatedFields:
@@ -158,7 +159,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 

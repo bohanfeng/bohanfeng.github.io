@@ -8,5 +8,6 @@ thumbnail: ""
 teaser: "Integrated precedence-constrained task assignment and collision-free path planning for multiple mobile robots in smart manufacturing."
 teaser_zh: "移动机器人前序约束多智能体任务分配与路径规划一体化方法。"
 paperurl: "https://doi.org/10.3390/app14073094"
+pdfurl: "/files/papers/2024-applsci-integrated-matapf.pdf"
 codeurl: ""
 ---

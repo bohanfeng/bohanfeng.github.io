@@ -7,6 +7,7 @@ category: conferences
 thumbnail: ""
 teaser: "Transformer-based motion planning treating trajectory generation as a sequence-to-sequence prediction task."
 teaser_zh: "将机器人运动规划视为序列到序列生成任务的Transformer方法。"
-paperurl: ""
+paperurl: "/files/papers/2025-idetc-mp-former.pdf"
+pdfurl: "/files/papers/2025-idetc-mp-former.pdf"
 codeurl: ""
 ---

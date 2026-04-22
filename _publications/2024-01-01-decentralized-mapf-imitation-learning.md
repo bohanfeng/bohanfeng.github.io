@@ -8,5 +8,6 @@ thumbnail: ""
 teaser: "Decentralized multi-agent path planning using imitation learning from expert demonstrations and selective inter-agent communication."
 teaser_zh: "基于模仿学习与选择性通信的去中心化多智能体路径规划方法。"
 paperurl: "https://doi.org/10.1115/1.4065167"
+pdfurl: "/files/papers/2024-jcise-decentralized-mapf-selective-communication.pdf"
 codeurl: ""
 ---

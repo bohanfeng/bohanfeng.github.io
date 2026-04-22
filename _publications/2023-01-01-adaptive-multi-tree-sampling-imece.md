@@ -8,5 +8,6 @@ thumbnail: ""
 teaser: "Conference version presenting the adaptive multi-tree sampling framework for efficient robot motion planning."
 teaser_zh: "自适应多树采样机器人运动规划方法（会议版本）。"
 paperurl: "https://doi.org/10.1115/IMECE2023-113127"
+pdfurl: "/files/papers/2023-imece-adaptive-multi-tree-sampling.pdf"
 codeurl: ""
 ---

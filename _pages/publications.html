@@ -5,10 +5,44 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+.pub-intro {
+  margin: 1em 0 1.6em;
+  padding: 1em 1.2em;
+  border-left: 4px solid #2f5d8a;
+  background: rgba(47, 93, 138, 0.06);
+  border-radius: 6px;
+}
+.pub-theme-list {
+  margin: 0.8em 0 0;
+  padding-left: 1.2em;
+}
+.pub-theme-list li {
+  margin: 0.3em 0;
+}
+</style>
+
+<div class="pub-intro">
+  <div class="lang-zh" markdown="1">
+  这部分论文围绕一个统一主线展开：**如何将复杂制造中的工艺质量要求，前馈地转化为机器人运动、姿态与交互策略**，而不是把质量问题留到事后补偿。当前工作主要沿三条相互支撑的研究主线展开：
+
+  1. **工艺质量驱动的机器人行为生成**
+  2. **人机协同下的工艺认知与质量共调控**
+  3. **工艺物理嵌入的机器人加工与操作优化**
+  </div>
+  <div class="lang-en" markdown="1">
+  The publications below revolve around a common theme: **how process-quality requirements in complex manufacturing can be translated into robotic motion, posture, and interaction strategies in a principled way**, rather than leaving quality as a downstream variable to be corrected after execution. Broadly, the work clusters into three interconnected lines:
+
+  1. **Process-Quality-Driven Robot Behavior Generation**
+  2. **Human-in-the-Loop Process Cognition and Co-Regulation**
+  3. **Process-Physics-Embedded Robotic Machining and Manipulation**
+  </div>
+</div>
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">
-    <span class="lang-zh">也可以在 <a href="{{ site.author.googlescholar }}">Google Scholar</a> 查看完整论文列表。</span>
-    <span class="lang-en">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</span>
+    <span class="lang-zh">完整论文列表也可在 <a href="{{ site.author.googlescholar }}">Google Scholar</a> 查看。</span>
+    <span class="lang-en">A complete list of publications is also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</span>
   </div>
 {% endif %}
 
@@ -33,6 +67,3 @@ author_profile: true
     {% include pub-card.html %}
   {% endfor %}
 {% endif %}
-
-
-
