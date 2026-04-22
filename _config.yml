@@ -30,10 +30,10 @@ author:
   bio_zh           : "上海交通大学讲师。研究聚焦机器人工艺质量形成机理与主动调控。"
   location         : "Shanghai, China"
   location_zh      : "上海，中国"
-  employer         : "Global Institute of Future Technology, Shanghai Jiao Tong University"
-  employer_zh      : "上海交通大学溥渊未来技术学院"
-  employer_url     : "https://gift.sjtu.edu.cn/en"
-  employer_url_zh  : "https://gift.sjtu.edu.cn/"
+  employer         : "Shanghai Jiao Tong University"
+  employer_zh      : "上海交通大学"
+  employer_url     : "https://en.sjtu.edu.cn/"
+  employer_url_zh  : "https://www.sjtu.edu.cn/"
   uri              : # URL
   email            : "bohan.feng@sjtu.edu.cn"
 

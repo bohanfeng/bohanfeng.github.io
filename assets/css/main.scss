@@ -42,3 +42,53 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+@media (min-width: 1280px) {
+  #main,
+  .masthead__inner-wrap,
+  .greedy-nav,
+  .page__hero--overlay .wrapper,
+  .page__footer footer {
+    max-width: 1760px;
+  }
+}
+
+@media (min-width: 57.8125em) {
+  #main {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: calc(70px + 1rem);
+    height: auto;
+    overflow-y: visible;
+    padding-top: 0;
+    flex: 0 0 220px;
+    width: 220px;
+    float: none;
+    margin-right: 0;
+  }
+
+  .page,
+  .archive {
+    flex: 1 1 auto;
+    width: auto;
+    max-width: none;
+    float: none;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page__inner-wrap,
+  .page__content {
+    max-width: none;
+  }
+
+  .page__related {
+    margin-left: 0;
+  }
+}

@@ -8,6 +8,16 @@ redirect_from:
 ---
 
 <style>
+.page__content hr {
+  margin: 0.95em 0;
+}
+.page__content hr + h2 {
+  margin-top: 0.75em;
+}
+.page__content h2 {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.45em;
+}
 .hero-note {
   margin: 1.2em 0 2em;
   padding: 1em 1.2em;
@@ -68,45 +78,223 @@ redirect_from:
   color: #555;
 }
 .theme-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1em;
-  margin: 1.5em 0 2em;
+  margin: 1.35em 0 2em;
 }
 .theme-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1.1em 1.2em;
+  border-radius: 12px;
+  padding: 1.05em 1.2em;
   background: #fff;
+}
+.theme-card__visual {
+  position: relative;
+  width: 126px;
+  height: 96px;
+  flex: 0 0 126px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #dce6ef;
+  background: linear-gradient(135deg, rgba(47, 93, 138, 0.08), rgba(47, 127, 147, 0.04));
+}
+.theme-card__visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(47, 93, 138, 0.16), transparent 22%),
+    radial-gradient(circle at 82% 78%, rgba(224, 112, 90, 0.16), transparent 20%);
+}
+.theme-card__glyph {
+  position: absolute;
+  inset: 0;
+}
+.theme-card__content {
+  flex: 1;
+  min-width: 0;
 }
 .theme-card__index {
   display: inline-block;
-  margin-bottom: 0.7em;
-  padding: 0.2em 0.55em;
+  margin-bottom: 0.45em;
+  padding: 0.22em 0.58em;
   border-radius: 999px;
   background: rgba(47, 93, 138, 0.12);
   color: #2f5d8a;
-  font-size: 0.75em;
+  font-size: 0.74em;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .theme-card__title {
   font-weight: 700;
-  line-height: 1.45;
-  margin-bottom: 0.55em;
+  line-height: 1.42;
+  margin-bottom: 0.4em;
 }
 .theme-card__body {
-  font-size: 0.88em;
+  font-size: 0.9em;
   color: #555;
   line-height: 1.7;
   margin: 0;
 }
+.theme-card__visual--one .theme-card__glyph::before {
+  content: "";
+  position: absolute;
+  inset: 18px 20px;
+  border: 2px dashed rgba(47, 93, 138, 0.32);
+  border-radius: 26px;
+}
+.theme-card__visual--one .theme-card__glyph::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2f5d8a, #2f7f93);
+  box-shadow: 0 0 0 6px rgba(47, 93, 138, 0.10);
+  animation: theme-orbit 4.6s linear infinite;
+}
+.theme-card__visual--one::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e0705a;
+  top: 22px;
+  left: 24px;
+  box-shadow: 64px 42px 0 0 rgba(47, 127, 147, 0.85);
+  animation: theme-pulse 2.6s ease-in-out infinite;
+}
+.theme-card__visual--two .theme-card__glyph {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 50%;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(47, 93, 138, 0.24), rgba(47, 127, 147, 0.45), rgba(224, 112, 90, 0.24));
+  animation: theme-breathe 2.8s ease-in-out infinite;
+}
+.theme-card__visual--two .theme-card__glyph::before,
+.theme-card__visual--two .theme-card__glyph::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(47, 93, 138, 0.10);
+}
+.theme-card__visual--two .theme-card__glyph::before {
+  left: -8px;
+  background: #2f5d8a;
+  animation: theme-pulse 2.4s ease-in-out infinite;
+}
+.theme-card__visual--two .theme-card__glyph::after {
+  right: -8px;
+  background: #e0705a;
+  animation: theme-pulse 2.4s ease-in-out infinite 0.5s;
+}
+.theme-card__visual--three .theme-card__glyph {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 20px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(47, 93, 138, 0.14);
+}
+.theme-card__visual--three .theme-card__glyph::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 26px;
+  height: 42px;
+  margin-left: -13px;
+  border-radius: 14px 14px 8px 8px;
+  background: linear-gradient(180deg, #2f7f93, #2f5d8a);
+  box-shadow: 0 8px 18px rgba(47, 93, 138, 0.18);
+  animation: theme-sweep 2.8s ease-in-out infinite;
+}
+.theme-card__visual--three .theme-card__glyph::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 26px;
+  height: 22px;
+  border-top: 3px solid rgba(224, 112, 90, 0.8);
+  border-radius: 50%;
+  animation: theme-wave 2.6s ease-in-out infinite;
+}
+@keyframes theme-orbit {
+  from {
+    transform: rotate(0deg) translateX(29px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(29px) rotate(-360deg);
+  }
+}
+@keyframes theme-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.88;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 1;
+  }
+}
+@keyframes theme-breathe {
+  0%, 100% {
+    transform: scaleX(0.94);
+    opacity: 0.72;
+  }
+  50% {
+    transform: scaleX(1.04);
+    opacity: 1;
+  }
+}
+@keyframes theme-sweep {
+  0%, 100% {
+    transform: translateX(-12px) rotate(-8deg);
+  }
+  50% {
+    transform: translateX(12px) rotate(8deg);
+  }
+}
+@keyframes theme-wave {
+  0%, 100% {
+    transform: scaleX(0.88);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleX(1.08);
+    opacity: 0.95;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-card__visual *,
+  .theme-card__visual::after {
+    animation: none !important;
+  }
+}
 .career-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 1.2em;
+  gap: 1.25em;
   margin: 1.2em 0 2em;
   padding: 1.1em 1.3em;
   border: 1px solid #d9e2ec;
@@ -120,21 +308,28 @@ redirect_from:
   margin-bottom: 0;
 }
 .career-card__logo {
-  width: 84px;
-  height: 84px;
+  width: 198px;
+  height: auto;
   object-fit: contain;
-  flex: 0 0 84px;
+  flex: 0 0 198px;
 }
 @media (max-width: 900px) {
-  .theme-grid {
-    grid-template-columns: 1fr;
+  .theme-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .theme-card__visual {
+    width: 100%;
+    max-width: 180px;
   }
   .career-card {
     flex-direction: column;
+    align-items: flex-start;
   }
   .career-card__logo {
-    width: 72px;
-    height: 72px;
+    width: 150px;
+    flex-basis: 150px;
+    margin: 0.4em auto 0;
   }
 }
 </style>
@@ -145,7 +340,6 @@ redirect_from:
 **讲师，机器人工艺与智能制造研究者**
 
 您好。我目前任职于[上海交通大学溥渊未来技术学院（GIFT）](https://gift.sjtu.edu.cn/)，并隶属于[Smart Manufacturing with AI and Reliability Technology (SMART) Center](https://gift.sjtu.edu.cn/research/60)。我当前与[倪军](https://gift.sjtu.edu.cn/faculty/40815)教授和[金隼](https://me.sjtu.edu.cn/teacher_directory1/jinsun)教授合作，研究聚焦于**复杂制造中的机器人工艺质量形成机理与主动调控**。
-
 </div>
 
 <div class="lang-en" markdown="1">
@@ -207,8 +401,8 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
     </div>
     <div class="edu-card__period">2016 - 2020</div>
     <div class="edu-card__detail">
-      <span class="lang-zh">GPA：3.9 / 4.0</span>
-      <span class="lang-en">GPA: 3.9 / 4.0</span>
+      <span class="lang-zh">GPA：3.9 / 4.0<br>创新实验班</span>
+      <span class="lang-en">GPA: 3.9 / 4.0<br>Innovation Experimental Class</span>
     </div>
   </div>
 </div>
@@ -231,37 +425,52 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 
 <div class="theme-grid">
   <div class="theme-card">
-    <div class="theme-card__index">Theme 1</div>
-    <div class="theme-card__title">
-      <span class="lang-zh">工艺质量驱动的机器人行为生成</span>
-      <span class="lang-en">Process-Quality-Driven Robot Behavior Generation</span>
+    <div class="theme-card__visual theme-card__visual--one" aria-hidden="true">
+      <span class="theme-card__glyph"></span>
     </div>
-    <p class="theme-card__body">
-      <span class="lang-zh">研究路径、轨迹、姿态、节拍与操作参数如何围绕工艺质量目标联合生成，重点关注运动规划、学习型生成、多机器人协同与数字孪生驱动的行为设计。</span>
-      <span class="lang-en">I study how paths, trajectories, postures, timing, and operation parameters can be generated jointly around process-quality objectives, spanning motion planning, learning-based generation, multi-robot coordination, and digital-twin-enabled behavior design.</span>
-    </p>
+    <div class="theme-card__content">
+      <div class="theme-card__index">Theme 1</div>
+      <div class="theme-card__title">
+        <span class="lang-zh">工艺质量驱动的机器人行为生成</span>
+        <span class="lang-en">Process-Quality-Driven Robot Behavior Generation</span>
+      </div>
+      <p class="theme-card__body">
+        <span class="lang-zh">研究路径、轨迹、姿态、节拍与操作参数如何围绕工艺质量目标联合生成，重点关注运动规划、学习型生成、多机器人协同与数字孪生驱动的行为设计。</span>
+        <span class="lang-en">I study how paths, trajectories, postures, timing, and operation parameters can be generated jointly around process-quality objectives, spanning motion planning, learning-based generation, multi-robot coordination, and digital-twin-enabled behavior design.</span>
+      </p>
+    </div>
   </div>
   <div class="theme-card">
-    <div class="theme-card__index">Theme 2</div>
-    <div class="theme-card__title">
-      <span class="lang-zh">人机协同下的工艺认知与质量共调控</span>
-      <span class="lang-en">Human-in-the-Loop Process Cognition and Co-Regulation</span>
+    <div class="theme-card__visual theme-card__visual--two" aria-hidden="true">
+      <span class="theme-card__glyph"></span>
     </div>
-    <p class="theme-card__body">
-      <span class="lang-zh">研究人的知识、经验、示教与认知反馈如何进入机器人制造过程，形成面向工艺质量的协同调控机制，服务于共享空间协作、工具操作与复杂任务执行。</span>
-      <span class="lang-en">I investigate how human knowledge, experience, teaching, and cognitive feedback can enter robotic manufacturing as part of a process-quality co-regulation loop for shared-workspace collaboration, tool use, and complex task execution.</span>
-    </p>
+    <div class="theme-card__content">
+      <div class="theme-card__index">Theme 2</div>
+      <div class="theme-card__title">
+        <span class="lang-zh">人机协同下的工艺认知与质量共调控</span>
+        <span class="lang-en">Human-in-the-Loop Process Cognition and Co-Regulation</span>
+      </div>
+      <p class="theme-card__body">
+        <span class="lang-zh">研究人的知识、经验、示教与认知反馈如何进入机器人制造过程，形成面向工艺质量的协同调控机制，服务于共享空间协作、工具操作与复杂任务执行。</span>
+        <span class="lang-en">I investigate how human knowledge, experience, teaching, and cognitive feedback can enter robotic manufacturing as part of a process-quality co-regulation loop for shared-workspace collaboration, tool use, and complex task execution.</span>
+      </p>
+    </div>
   </div>
   <div class="theme-card">
-    <div class="theme-card__index">Theme 3</div>
-    <div class="theme-card__title">
-      <span class="lang-zh">工艺物理嵌入的机器人加工与操作优化</span>
-      <span class="lang-en">Process-Physics-Embedded Robotic Machining and Manipulation</span>
+    <div class="theme-card__visual theme-card__visual--three" aria-hidden="true">
+      <span class="theme-card__glyph"></span>
     </div>
-    <p class="theme-card__body">
-      <span class="lang-zh">研究结构柔顺性、惯量、接触力、切削载荷与瞬态动态如何决定质量形成，并反向约束姿态、运动与工艺参数，实现机器人加工与操作的主动优化。</span>
-      <span class="lang-en">I study how compliance, inertia, contact force, cutting load, and transient dynamics determine quality formation, and how these process-physics constraints should feed back into posture, motion, and parameter optimization.</span>
-    </p>
+    <div class="theme-card__content">
+      <div class="theme-card__index">Theme 3</div>
+      <div class="theme-card__title">
+        <span class="lang-zh">工艺物理嵌入的机器人加工与操作优化</span>
+        <span class="lang-en">Process-Physics-Embedded Robotic Machining and Manipulation</span>
+      </div>
+      <p class="theme-card__body">
+        <span class="lang-zh">研究结构柔顺性、惯量、接触力、切削载荷与瞬态动态如何决定质量形成，并反向约束姿态、运动与工艺参数，实现机器人加工与操作的主动优化。</span>
+        <span class="lang-en">I study how compliance, inertia, contact force, cutting load, and transient dynamics determine quality formation, and how these process-physics constraints should feed back into posture, motion, and parameter optimization.</span>
+      </p>
+    </div>
   </div>
 </div>
 
@@ -271,15 +480,15 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 
 <div class="career-card">
   <div class="career-card__text">
-    <div class="lang-zh" markdown="1">
-    **[上海交通大学溥渊未来技术学院](https://gift.sjtu.edu.cn/)**：讲师（2025.07 - 至今）
+    <div class="lang-zh">
+      <p><strong>上海交通大学溥渊未来技术学院</strong>：讲师（2025.07 - 至今）</p>
     </div>
 
-    <div class="lang-en" markdown="1">
-    **[Global Institute of Future Technology, Shanghai Jiao Tong University](https://gift.sjtu.edu.cn/en)**: Lecturer (Jul. 2025 - present)
+    <div class="lang-en">
+      <p><strong>Global Institute of Future Technology, Shanghai Jiao Tong University</strong>: Lecturer (Jul. 2025 - present)</p>
     </div>
   </div>
-  <img class="career-card__logo" src="/images/education/gift-puyuan.png" alt="GIFT logo">
+  <img class="career-card__logo" src="/images/education/gift-puyuan.png" alt="Puyuan logo">
 </div>
 
 ---
@@ -291,11 +500,11 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 
 - 博士研究生国家奖学金（2025）
 - 上海市优秀毕业生（2025）
-- 入选上海交通大学博士生船长计划（全校 36 人，2024）
+- 入选上海交通大学博士生“学术领航计划”（全校 36 人，2024）
 - 上海交通大学优秀团干部（2024）
 - 上海交通大学优秀学生干部（2024）
-- 上海交通大学密西根学院俞黎明奖学金（2024）
-- 上海交通大学密西根学院学生发展奖学金（2022，2023，2024）
+- 俞黎明奖学金，上海交通大学密西根学院（2024）
+- 学生发展奖学金，上海交通大学密西根学院（2022，2023，2024）
 - 上海交通大学三好学生（2023）
 - 大连理工大学优秀毕业生（2020）
 - 大连理工大学文体活动奖学金（2017，2018，2019）
@@ -311,7 +520,7 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 - 上海交通大学密西根学院“盛相杯”创新大赛二等奖（2024.05）
 - 中国国际大学生创新大赛全国总决赛银奖（2023.12）
 - 上海市“知行杯”大学生社会实践大赛一等奖（2023.11）
-- 第九届“互联网+”大学生创新创业大赛上海赛区金奖（2023.10）
+- 第九届中国国际大学生“互联网+”创新创业大赛上海赛区金奖（2023.10）
 - 第十二届认证杯中国数学建模网络挑战赛二等奖（2019.05）
 - 第八届亚太地区大学生数学建模竞赛二等奖（2019.01）
 - 第三届“临潮杯”国际华语辩论邀请赛东北赛区冠军（2018.09）
