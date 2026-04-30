@@ -6,7 +6,7 @@ funder: "NSFC Youth Fund"
 funder_en: "NSFC Youth Fund"
 role: "Student Participant"
 role_en: "Student Participant"
-thumbnail: ""
+thumbnail: "2021-01-01-user-data-mining-product-optimization.webp"
 teaser: "Intelligent methods for product design optimization based on user behavior data mining and crowd behavior modeling."
 teaser_en: "Intelligent methods for product design optimization based on user behavior data mining and crowd behavior modeling."
 date: 2021-01-01

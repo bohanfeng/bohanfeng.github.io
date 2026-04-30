@@ -22,7 +22,7 @@ repository               : "bohanfeng/bohanfeng.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.webp"
   name             : "Bohan Feng (Dylan Bo)"
   name_zh          : "冯波瀚"
   pronouns         :

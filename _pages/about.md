@@ -99,7 +99,13 @@ redirect_from:
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid #dce6ef;
-  background: linear-gradient(135deg, rgba(47, 93, 138, 0.08), rgba(47, 127, 147, 0.04));
+  background: #fff;
+}
+.theme-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .theme-card__visual::before {
   content: "";
@@ -139,6 +145,14 @@ redirect_from:
   color: #555;
   line-height: 1.7;
   margin: 0;
+}
+.theme-card__visual::before,
+.theme-card__visual::after,
+.theme-card__glyph,
+.theme-card__glyph::before,
+.theme-card__glyph::after {
+  display: none !important;
+  content: none !important;
 }
 .theme-card__visual--one .theme-card__glyph::before {
   content: "";
@@ -355,10 +369,10 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 
 <div class="hero-note">
   <div class="lang-zh" markdown="1">
-  我的长期目标，是推动“机器人制造工艺学”从经验驱动走向**可建模、可预测、可设计、可调控**的科学体系，并进一步回答：以刚度和精度堆叠为核心的“硬”加工范式，是否能够与生命系统启发的、自适应的“软”加工范式，在同一套质量形成原理下得到统一理解。
+  我的长期目标，是推动“机器人制造工艺学”从经验驱动走向复杂动力系统科学：将机器人—刀具—工件—工艺过程理解为一个**多体、多场、多尺度、强耦合的非线性系统**，揭示其在参数空间中的**全局拓扑结构、吸引子、奇异性与临界行为**，并据此建立面向质量形成的**可建模、可预测、可设计、可调控**理论体系。
   </div>
   <div class="lang-en" markdown="1">
-  My long-term goal is to help build a science of **robotic manufacturing process quality** in which quality formation can be modeled, predicted, designed, and actively regulated, and to clarify whether the prevailing hard paradigm of stiffness- and accuracy-driven machining can be connected to softer bio-inspired paradigms of adaptation, sensing, and morphological intelligence within a unified theory of quality formation.
+  My long-term goal is to help build a science of **robotic manufacturing process quality** by treating robot-tool-workpiece-process interactions as a **multibody, multiphysics, multiscale, and strongly coupled nonlinear dynamical system**, uncovering its **global topological structure in parameter space, including attractors, singularities, and critical behaviors**, and using that understanding to establish a theory of quality formation that is **modelable, predictable, designable, and actively regulatable**.
   </div>
 </div>
 
@@ -428,7 +442,7 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 <div class="theme-grid">
   <div class="theme-card">
     <div class="theme-card__visual theme-card__visual--one" aria-hidden="true">
-      <span class="theme-card__glyph"></span>
+      <img class="theme-card__image" src="/images/research-agenda/theme-1.webp" alt="Theme 1 illustration">
     </div>
     <div class="theme-card__content">
       <div class="theme-card__index">Theme 1</div>
@@ -444,7 +458,7 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
   </div>
   <div class="theme-card">
     <div class="theme-card__visual theme-card__visual--two" aria-hidden="true">
-      <span class="theme-card__glyph"></span>
+      <img class="theme-card__image" src="/images/research-agenda/theme-2.webp" alt="Theme 2 illustration">
     </div>
     <div class="theme-card__content">
       <div class="theme-card__index">Theme 2</div>
@@ -460,7 +474,7 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
   </div>
   <div class="theme-card">
     <div class="theme-card__visual theme-card__visual--three" aria-hidden="true">
-      <span class="theme-card__glyph"></span>
+      <img class="theme-card__image" src="/images/research-agenda/theme-3.webp" alt="Theme 3 illustration">
     </div>
     <div class="theme-card__content">
       <div class="theme-card__index">Theme 3</div>
