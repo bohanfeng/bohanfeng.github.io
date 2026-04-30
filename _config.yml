@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "冯波瀚 | Bohan Feng"
 title_separator          : "-"
 name                     : &name "Bohan Feng (Dylan Bo)"
-description              : &description "Academic homepage of Bohan Feng: robotic manufacturing process quality, motion generation, and human-robot collaboration."
+description              : &description "Academic homepage of Bohan Feng: robotic manufacturing process quality as an emergent property of coupled robot-tool-workpiece-process systems."
 url                      : https://bohanfeng.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bohanfeng/bohanfeng.github.io"
@@ -26,8 +26,8 @@ author:
   name             : "Bohan Feng (Dylan Bo)"
   name_zh          : "冯波瀚"
   pronouns         :
-  bio              : "Lecturer at Shanghai Jiao Tong University. Research focuses on mechanisms and active regulation of process quality formation in robotic manufacturing."
-  bio_zh           : "上海交通大学讲师。研究聚焦机器人工艺质量形成机理与主动调控。"
+  bio              : "Lecturer at Shanghai Jiao Tong University. Research focuses on robotic manufacturing process quality as an emergent property of coupled robot-tool-workpiece-process systems."
+  bio_zh           : "上海交通大学讲师。研究聚焦耦合机器人-刀具-工件-工艺系统中的机器人工艺质量形成机理与主动调控。"
   location         : "Shanghai, China"
   location_zh      : "上海，中国"
   employer         : "Shanghai Jiao Tong University"

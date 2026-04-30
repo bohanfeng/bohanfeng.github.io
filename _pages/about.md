@@ -349,16 +349,16 @@ redirect_from:
 # Bohan Feng (Dylan Bo) | 冯波瀚
 **Lecturer, Robotic Manufacturing Process Researcher**
 
-I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai Jiao Tong University](https://gift.sjtu.edu.cn/en), affiliated with the [Smart Manufacturing with AI and Reliability Technology (SMART) Center](https://gift.sjtu.edu.cn/en/research/10060). I am currently working with [Jun Ni](https://gift.sjtu.edu.cn/en/faculty/40816) and [Sun Jin](https://me.sjtu.edu.cn/en/FullTimeTeacher/jinsun.html) on **mechanisms and active regulation of process quality formation in robotic manufacturing**.
+I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai Jiao Tong University](https://gift.sjtu.edu.cn/en), affiliated with the [Smart Manufacturing with AI and Reliability Technology (SMART) Center](https://gift.sjtu.edu.cn/en/research/10060). I am currently working with [Jun Ni](https://gift.sjtu.edu.cn/en/faculty/40816) and [Sun Jin](https://me.sjtu.edu.cn/en/FullTimeTeacher/jinsun.html) on **the mechanisms, dynamical structure, and active regulation of process quality formation in robotic manufacturing**, treating quality not as a downstream error metric but as an emergent property of coupled robot-tool-workpiece-process systems.
 
 </div>
 
 <div class="hero-note">
   <div class="lang-zh" markdown="1">
-  我的长期目标，是推动“机器人制造工艺学”从经验驱动走向**可建模、可预测、可设计、可调控**的科学体系。
+  我的长期目标，是推动“机器人制造工艺学”从经验驱动走向**可建模、可预测、可设计、可调控**的科学体系，并进一步回答：以刚度和精度堆叠为核心的“硬”加工范式，是否能够与生命系统启发的、自适应的“软”加工范式，在同一套质量形成原理下得到统一理解。
   </div>
   <div class="lang-en" markdown="1">
-  My long-term goal is to help build a science of **robotic manufacturing process quality** in which quality formation can be modeled, predicted, designed, and actively regulated.
+  My long-term goal is to help build a science of **robotic manufacturing process quality** in which quality formation can be modeled, predicted, designed, and actively regulated, and to clarify whether the prevailing hard paradigm of stiffness- and accuracy-driven machining can be connected to softer bio-inspired paradigms of adaptation, sensing, and morphological intelligence within a unified theory of quality formation.
   </div>
 </div>
 
@@ -414,11 +414,11 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 ## <span class="lang-zh">核心研究问题</span><span class="lang-en">Core Research Question</span>
 
 <div class="lang-zh" markdown="1">
-在复杂制造中，如何以具备原理性的方式，将工艺质量要求转化为机器人运动、姿态与交互策略，而不是把质量视为事后修正的下游结果？
+在复杂制造中，如果将工艺质量视为机器人—刀具—工件—工艺过程耦合动力系统中的涌现现象，而不是事后修正的下游结果，如何以具备原理性的方式将质量要求转化为机器人运动、姿态与交互策略？
 </div>
 
 <div class="lang-en" markdown="1">
-**In complex manufacturing, how can process-quality requirements be translated into robotic motion, posture, and interaction strategies in a principled manner, rather than treating quality as a downstream outcome to be corrected post hoc?**
+**In complex manufacturing, if process quality is understood as an emergent property of a coupled robot-tool-workpiece-process dynamical system rather than a downstream outcome to be corrected post hoc, how can process-quality requirements be translated into robotic motion, posture, and interaction strategies in a principled way?**
 </div>
 
 ---
@@ -437,8 +437,8 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
         <span class="lang-en">Process-Quality-Driven Robot Behavior Generation</span>
       </div>
       <p class="theme-card__body">
-        <span class="lang-zh">研究路径、轨迹、姿态、节拍与操作参数如何围绕工艺质量目标联合生成，重点关注运动规划、学习型生成、多机器人协同与数字孪生驱动的行为设计。</span>
-        <span class="lang-en">I study how paths, trajectories, postures, timing, and operation parameters can be generated jointly around process-quality objectives, spanning motion planning, learning-based generation, multi-robot coordination, and digital-twin-enabled behavior design.</span>
+        <span class="lang-zh">研究路径、轨迹、姿态、节拍与操作参数如何围绕工艺质量目标联合生成，使机器人行为直接面向质量相关的几何约束、动力学约束与过程状态演化，而不是先规划再事后修补；重点关注运动规划、学习型生成、多机器人协同与数字孪生驱动的行为设计。</span>
+        <span class="lang-en">I study how paths, trajectories, postures, timing, and operation parameters can be generated jointly around process-quality objectives, so that robot behavior is synthesized directly against quality-relevant geometric constraints, dynamical constraints, and process-state evolution rather than planned first and corrected later. This includes motion planning, learning-based generation, multi-robot coordination, and digital-twin-enabled behavior design.</span>
       </p>
     </div>
   </div>
@@ -453,8 +453,8 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
         <span class="lang-en">Human-in-the-Loop Process Cognition and Co-Regulation</span>
       </div>
       <p class="theme-card__body">
-        <span class="lang-zh">研究人的知识、经验、示教与认知反馈如何进入机器人制造过程，形成面向工艺质量的协同调控机制，服务于共享空间协作、工具操作与复杂任务执行。</span>
-        <span class="lang-en">I investigate how human knowledge, experience, teaching, and cognitive feedback can enter robotic manufacturing as part of a process-quality co-regulation loop for shared-workspace collaboration, tool use, and complex task execution.</span>
+        <span class="lang-zh">研究人的知识、经验、示教与认知反馈如何进入机器人制造过程，形成面向工艺质量的协同调控回路，尤其关注当过程状态部分不可观、具有安全风险或接近失稳边界时，人如何从外部监督者转变为工艺认知与质量调控的一部分。</span>
+        <span class="lang-en">I investigate how human knowledge, experience, teaching, and cognitive feedback can enter robotic manufacturing as part of a process-quality co-regulation loop, especially when process states are partially observed, safety-critical, or close to instability boundaries. The goal is to turn human participation from external supervision into a structured source of process cognition for shared-workspace collaboration, tool use, and complex task execution.</span>
       </p>
     </div>
   </div>
@@ -469,8 +469,8 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
         <span class="lang-en">Process-Physics-Embedded Robotic Machining and Manipulation</span>
       </div>
       <p class="theme-card__body">
-        <span class="lang-zh">研究结构柔顺性、惯量、接触力、切削载荷与瞬态动态如何决定质量形成，并反向约束姿态、运动与工艺参数，实现机器人加工与操作的主动优化。</span>
-        <span class="lang-en">I study how compliance, inertia, contact force, cutting load, and transient dynamics determine quality formation, and how these process-physics constraints should feed back into posture, motion, and parameter optimization.</span>
+        <span class="lang-zh">将机器人加工与操作视为多体、多场、多尺度、强耦合的非线性动力系统，研究柔顺性、惯量、接触力、切削载荷与瞬态动态如何共同决定质量形成、稳定性与失稳边界，并进一步探索刚度驱动的“硬”加工范式与生命启发的自适应“软”加工范式能否在统一的工艺物理与形态智能框架下得到联系。</span>
+        <span class="lang-en">I study robotic machining and manipulation as coupled nonlinear dynamical systems in which compliance, inertia, contact force, cutting load, and transient dynamics jointly govern quality formation, stability, and failure boundaries. A longer-term question is whether the stiffness-driven hard paradigm of robotic machining and softer bio-inspired paradigms of adaptive material removal can be linked within a unified framework of process physics, morphology, and embedded intelligence.</span>
       </p>
     </div>
   </div>
