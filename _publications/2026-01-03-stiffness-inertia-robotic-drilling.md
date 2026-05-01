@@ -1,6 +1,8 @@
 ---
 title: "Stiffness-Inertia Dynamic Synergy for Breakthrough Surge Suppression in High-Speed Robotic Drilling"
 authors: "D. Liu, **Bohan Feng**, Q. Gu, S. Liu, M. Li, S. Jin"
+contribution_note: "Corresponding author"
+contribution_note_zh: "通讯作者"
 venue: "Preprint"
 date: 2026-01-03
 category: manuscripts

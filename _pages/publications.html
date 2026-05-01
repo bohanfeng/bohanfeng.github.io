@@ -52,17 +52,21 @@ author_profile: true
 
 {% if site.publication_category %}
   {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include pub-card.html %}
-    {% endfor %}
+    {% assign category_posts = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+    {% if category_posts.size > 0 %}
+      <h2>{{ category[1].title }}</h2><hr />
+      {% assign year_groups = category_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year_group in year_groups %}
+        {% assign first_author_posts = year_group.items | where: "first_author", true | sort: "date" | reverse %}
+        {% assign other_posts = year_group.items | where_exp: "post", "post.first_author != true" | sort: "date" | reverse %}
+        {% for post in first_author_posts %}
+          {% include pub-card.html %}
+        {% endfor %}
+        {% for post in other_posts %}
+          {% include pub-card.html %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}

@@ -1,6 +1,7 @@
 ---
 title: "A Decentralized Multi-Agent Path Planning Approach Based on Imitation Learning and Global Static Feature Extraction"
 authors: "**Bohan Feng**, Y. Bi, M. Li, L. Lin"
+first_author: true
 venue: "ASME International Mechanical Engineering Congress and Exposition (IMECE)"
 date: 2023-01-02
 category: conferences

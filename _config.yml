@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "冯波瀚 | Bohan Feng"
 title_separator          : "-"
 name                     : &name "Bohan Feng (Dylan Bo)"
-description              : &description "Academic homepage of Bohan Feng: robotic manufacturing process quality as an emergent property of coupled robot-tool-workpiece-process systems."
+description              : &description "Academic homepage of Bohan Feng (冯波瀚): robotic manufacturing process quality, motion planning, human-robot collaboration, and process-physics-aware robotic machining."
 url                      : https://bohanfeng.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bohanfeng/bohanfeng.github.io"
@@ -152,9 +152,12 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Bohan Feng (冯波瀚)"
+  links:
+    - "https://scholar.google.com/citations?hl=en&user=gfX_hpgAAAAJ"
+    - "https://orcid.org/0009-0001-6834-0867"
+    - "https://github.com/bohanfeng"
 
 
 # Analytics
@@ -232,7 +235,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true

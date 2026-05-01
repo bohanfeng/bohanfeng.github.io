@@ -1,6 +1,7 @@
 ---
 title: "Towards Safe Motion Planning for Industrial Human-Robot Interaction: A Co-Evolution Approach Based on Human Digital Twin and Mixed Reality"
 authors: "**Bohan Feng**, Z. Wang, L. Yuan, Q. Zhou, Y. Chen, Y. Bi"
+first_author: true
 venue: "Robotics and Computer-Integrated Manufacturing"
 date: 2025-01-01
 category: manuscripts

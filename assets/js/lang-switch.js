@@ -1,6 +1,6 @@
 (function () {
   var STORAGE_KEY = 'preferred-lang';
-  var DEFAULT_LANG = 'zh';
+  var DEFAULT_LANG = 'en';
 
   function applyLang(lang) {
     document.documentElement.setAttribute('data-lang', lang);

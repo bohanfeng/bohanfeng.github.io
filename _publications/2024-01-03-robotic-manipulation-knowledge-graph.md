@@ -1,6 +1,7 @@
 ---
-title: "A Robotic Manipulation Framework for Industrial Human–Robot Collaboration Based on Continual Knowledge Graph Embedding"
+title: "A Robotic Manipulation Framework for Industrial Human-Robot Collaboration Based on Continual Knowledge Graph Embedding"
 authors: "**Bohan Feng**, X. Juan, X. Gao, Q. Zhou, Y. Bi"
+first_author: true
 venue: "The International Journal of Advanced Manufacturing Technology"
 date: 2024-01-03
 category: manuscripts

@@ -15,7 +15,7 @@
 <!-- Language preference: set data-lang on <html> immediately to prevent flash -->
 <script>
   (function() {
-    var lang = localStorage.getItem('preferred-lang') || 'zh';
+    var lang = localStorage.getItem('preferred-lang') || 'en';
     document.documentElement.setAttribute('data-lang', lang);
   })();
 </script>
@@ -24,7 +24,42 @@
   html[data-lang="zh"] .lang-en { display: none !important; }
   html:not([data-lang]) .lang-en { display: none !important; }
   #lang-toggle-btn { cursor: pointer; font-weight: 600; font-size: 0.85em; letter-spacing: 0.05em; }
+  #lang-toggle,
+  #theme-toggle { display: none !important; }
 </style>
+
+{% if page.url == "/" or page.url == "/index.html" %}
+<meta name="keywords" content="冯波瀚, Bohan Feng, robotic manufacturing, process quality, robotic manufacturing process quality, motion planning, human-robot collaboration, robotic drilling">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bohan Feng",
+  "alternateName": "冯波瀚",
+  "url": "{{ site.url }}{{ base_path }}/",
+  "image": "{{ site.url }}{{ base_path }}/images/{{ site.author.avatar }}",
+  "jobTitle": "Lecturer",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Shanghai Jiao Tong University",
+    "url": "https://en.sjtu.edu.cn/"
+  },
+  "email": "mailto:{{ site.author.email }}",
+  "sameAs": [
+    "{{ site.author.googlescholar }}",
+    "{{ site.author.orcid }}",
+    "https://github.com/{{ site.author.github }}"
+  ],
+  "knowsAbout": [
+    "robotic manufacturing",
+    "robotic manufacturing process quality",
+    "motion planning",
+    "human-robot collaboration",
+    "robotic drilling"
+  ]
+}
+</script>
+{% endif %}
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">

@@ -56,6 +56,13 @@
       <p class="pub-card__authors">{{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
     {% endif %}
 
+    {% if post.contribution_note or post.contribution_note_zh %}
+      <p class="pub-card__note">
+        {% if post.contribution_note_zh %}<span class="lang-zh">{{ post.contribution_note_zh }}</span>{% endif %}
+        {% if post.contribution_note %}<span class="lang-en">{{ post.contribution_note }}</span>{% endif %}
+      </p>
+    {% endif %}
+
     <p class="pub-card__venue">
       <em>{{ post.venue }}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
     </p>

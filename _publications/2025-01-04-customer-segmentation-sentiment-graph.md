@@ -1,6 +1,8 @@
 ---
 title: "Customer Segmentation and Need Analysis Based on Sentiment Network of Online Reviewers and Graph Embedding"
 authors: "M. Shen, **Bohan Feng**, A. Cheng, Y. Bi"
+contribution_note: "Co-first author"
+contribution_note_zh: "共同第一作者"
 venue: "Journal of Mechanical Design"
 date: 2025-01-04
 category: manuscripts

@@ -1,6 +1,7 @@
 ---
 title: "An Adaptive Multi-RRT Approach for Robot Motion Planning"
 authors: "**Bohan Feng**, X. Jiang, B. Li, Q. Zhou, Y. Bi"
+first_author: true
 venue: "Expert Systems with Applications"
 date: 2024-01-02
 category: manuscripts

@@ -563,17 +563,17 @@ I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai J
 
 **Competitions and Distinctions**
 
-- Gold Award (Advisor), China International College Students' Innovation Competition, National Finals (Aug. 2025)
-- Bronze Award, China International College Students' Innovation Competition, Shanghai Division (Aug. 2025)
-- First Prize and Outstanding Advisor, SJTU Student Social Practice (Dec. 2024)
-- Silver Award, SJTU 25th Sheng Xuanhuai Innovation and Entrepreneurship Competition (Sep. 2024)
-- Second Prize, UM-SJTU Joint Institute Sheng Xiang Innovation Competition (May 2024)
-- Silver Award, China International College Students' Innovation Competition, National Finals (Dec. 2023)
-- First Prize, Shanghai Zhixing Cup Social Practice Competition (Nov. 2023)
-- Gold Award, 9th China International College Students' "Internet+" Innovation and Entrepreneurship Competition, Shanghai Division (Oct. 2023)
-- Second Prize, 12th Certification Cup China Mathematical Contest in Modeling Challenge (May 2019)
-- Second Prize, 8th Asia-Pacific Mathematical Contest in Modeling (Jan. 2019)
-- Champion, 3rd Linchao Cup International Chinese Debate Invitational, Northeast China Region (Sep. 2018)
-- Champion, Dalian Yuheng Cup Debate Tournament (Dec. 2017)
+- Gold Award (Advisor), China International College Students' Innovation Competition, National Finals (2025)
+- Bronze Award, China International College Students' Innovation Competition, Shanghai Division (2025)
+- First Prize and Outstanding Advisor, SJTU Student Social Practice (2024)
+- Silver Award, SJTU 25th Sheng Xuanhuai Innovation and Entrepreneurship Competition (2024)
+- Second Prize, UM-SJTU Joint Institute Sheng Xiang Innovation Competition (2024)
+- Silver Award, China International College Students' Innovation Competition, National Finals (2023)
+- First Prize, Shanghai Zhixing Cup Social Practice Competition (2023)
+- Gold Award, 9th China International College Students' "Internet+" Innovation and Entrepreneurship Competition, Shanghai Division (2023)
+- Second Prize, 12th Certification Cup China Mathematical Contest in Modeling Challenge (2019)
+- Second Prize, 8th Asia-Pacific Mathematical Contest in Modeling (2019)
+- Champion, 3rd Linchao Cup International Chinese Debate Invitational, Northeast China Region (2018)
+- Champion, Dalian Yuheng Cup Debate Tournament (2017)
 
 </div>

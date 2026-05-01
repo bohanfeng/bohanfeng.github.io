@@ -1,6 +1,7 @@
 ---
 title: "A Decentralized Multi-Agent Path Planning Approach Based on Imitation Learning and Selective Communication"
 authors: "**Bohan Feng**, Y. Bi, M. Li, L. Lin"
+first_author: true
 venue: "Journal of Computing and Information Science in Engineering"
 date: 2024-01-01
 category: manuscripts

@@ -1,6 +1,7 @@
 ---
 title: "A Robot Motion Planning Approach Based on Adaptive Multi-Tree Sampling"
 authors: "**Bohan Feng**, X. Jiang, Y. Bi"
+first_author: true
 venue: "ASME International Mechanical Engineering Congress and Exposition (IMECE)"
 date: 2023-01-01
 category: conferences
