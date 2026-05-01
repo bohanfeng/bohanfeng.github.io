@@ -363,7 +363,7 @@ redirect_from:
 # Bohan Feng (Dylan Bo) | 冯波瀚
 **Lecturer, Robotic Manufacturing Process Researcher**
 
-I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai Jiao Tong University](https://gift.sjtu.edu.cn/en), affiliated with the [Smart Manufacturing with AI and Reliability Technology (SMART) Center](https://gift.sjtu.edu.cn/en/research/10060). I am currently working with [Jun Ni](https://gift.sjtu.edu.cn/en/faculty/40816) and [Sun Jin](https://me.sjtu.edu.cn/en/FullTimeTeacher/jinsun.html) on **the mechanisms, dynamical structure, and active regulation of process quality formation in robotic manufacturing**, treating quality not as a downstream error metric but as an emergent property of coupled robot-tool-workpiece-process systems.
+I am a Lecturer at the [Global Institute of Future Technology (GIFT), Shanghai Jiao Tong University](https://gift.sjtu.edu.cn/en), affiliated with the [Smart Manufacturing with AI and Reliability Technology (SMART) Center](https://gift.sjtu.edu.cn/en/research/10060). I am currently working with [Jun Ni](https://gift.sjtu.edu.cn/en/faculty/40816) and [Sun Jin](https://me.sjtu.edu.cn/en/FullTimeTeacher/jinsun.html) on **the mechanisms, dynamical structure, and active regulation of process quality formation in robotic manufacturing**, treating quality not as a downstream error metric but as an emergent property of coupled robot-tool-workpiece-process systems. My name is written in Chinese as **冯波瀚**, which is the name most commonly used in Chinese-language search.
 
 </div>
 
