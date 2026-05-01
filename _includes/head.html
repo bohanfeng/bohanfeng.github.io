@@ -33,24 +33,36 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Bohan Feng",
-  "alternateName": "冯波瀚",
+  "@type": "ProfilePage",
   "url": "{{ site.url }}{{ base_path }}/",
-  "image": "{{ site.url }}{{ base_path }}/images/{{ site.author.avatar }}",
-  "jobTitle": "Lecturer",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Shanghai Jiao Tong University",
-    "url": "https://en.sjtu.edu.cn/"
+  "name": "Bohan Feng | 冯波瀚",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Bohan Feng",
+    "alternateName": "冯波瀚",
+    "url": "{{ site.url }}{{ base_path }}/",
+    "image": "{{ site.url }}{{ base_path }}/images/{{ site.author.avatar }}",
+    "jobTitle": "Lecturer",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Shanghai Jiao Tong University",
+      "url": "https://en.sjtu.edu.cn/"
+    },
+    "email": "mailto:{{ site.author.email }}",
+    "sameAs": [
+      "{{ site.author.googlescholar }}",
+      "{{ site.author.orcid }}",
+      "https://github.com/{{ site.author.github }}"
+    ],
+    "knowsAbout": [
+      "robotic manufacturing",
+      "robotic manufacturing process quality",
+      "motion planning",
+      "human-robot collaboration",
+      "robotic drilling"
+    ]
   },
-  "email": "mailto:{{ site.author.email }}",
-  "sameAs": [
-    "{{ site.author.googlescholar }}",
-    "{{ site.author.orcid }}",
-    "https://github.com/{{ site.author.github }}"
-  ],
-  "knowsAbout": [
+  "about": [
     "robotic manufacturing",
     "robotic manufacturing process quality",
     "motion planning",
